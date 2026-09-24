@@ -3,26 +3,49 @@
 .about{
     width:400px;
     margin: auto;
+    background-color: #9ae4da;
+    border: 1px solid #009691;
 }
 
 .about-team{
-    color:rgb(173, 213, 217)
+    color:#242018;
+    background-color: #14abab33;
 }
 
 .authors{
-    background-color: #e1e6e7;
+    background-color: #eae6d2;
 }
 
 .body{
-    background-color: rgb(197, 197, 197);
+    background-color: #f5f5eb;
+    font-family: 'DM Mono', monospace;
+    color:#242018;
 }
 
 .chartjs-sample{
-    background-color: #a0ced2;
+    background-color: #07859e;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-mono-regular {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer{                
     background-color: #14abab;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    color:#454037;
 }
 
 .icon-white{            /* Arrow icon at bottom of page */
@@ -30,7 +53,7 @@
 }
 
 .nav-background-color{   /* navbar background color */
-    background-color: #009691;
+    background-color: #14abab;
 }
 
 .nav-menu-item{               /* navbar link text properties */
@@ -40,7 +63,7 @@
 }
 
 .overview{
-    background-color: #dbe3e7;
+    background-color: #eae6d2;
 }
 
 .overview-left-padding{
@@ -57,7 +80,7 @@
 }
 
 .showcase{
-    background-color: #8fa3ab; /*#0096c7*/
+    background-color: #71bab7; /*#0096c7*/
 }
 
 /* ----------------- ID CSS ----------------- */
