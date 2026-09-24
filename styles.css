@@ -64,6 +64,7 @@ h1 {
 
 .overview{
     background-color: #eae6d2;
+    border: 2px solid #14abab;
 }
 
 .overview-left-padding{
@@ -80,7 +81,7 @@ h1 {
 }
 
 .showcase{
-    background-color: #71bab7; /*#0096c7*/
+    background-color: #7ec7c5; /*#0096c7*/
 }
 
 /* ----------------- ID CSS ----------------- */
