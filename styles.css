@@ -4,7 +4,7 @@
     width:400px;
     margin: auto;
     background-color: #9ae4da;
-    border: 1px solid #009691;
+    border: 1px solid #744e87;
 }
 
 .about-team{
@@ -13,14 +13,34 @@
 }
 
 .authors{
-    background-color: #eae6d2;
+    background-color: #f5ede7;
 }
 
 .body{
-    background-color: #f5f5eb;
+    background-color: #c6b8c6;
     font-family: 'DM Mono', monospace;
     color:#242018;
 }
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .chartjs-sample{
     background-color: #07859e;
@@ -39,7 +59,7 @@
 }
 
 .footer{                
-    background-color: #14abab;
+    background-color: #82489b;
 }
 
 h1 {
@@ -53,7 +73,7 @@ h1 {
 }
 
 .nav-background-color{   /* navbar background color */
-    background-color: #14abab;
+    background-color: #82489b;
 }
 
 .nav-menu-item{               /* navbar link text properties */
@@ -63,7 +83,7 @@ h1 {
 }
 
 .overview{
-    background-color: #eae6d2;
+    background-color: #f5ede7;
 }
 
 .overview-left-padding{
@@ -75,12 +95,12 @@ h1 {
 }
 
 .procedure{
-    background-color: #dbe3e7;
+    background-color: #ece1ef;
     padding: 1px;
 }
 
 .showcase{
-    background-color: #71bab7; /*#0096c7*/
+    background-color: #b581c9; /*#0096c7*/
 }
 
 /* ----------------- ID CSS ----------------- */
