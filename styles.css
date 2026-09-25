@@ -5,6 +5,11 @@
     margin: auto;
     background-color: #d39ae4;
     border: 1px solid #744e87;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.about:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 5px rgba(68, 3, 98, 0.425);
 }
 
 .about-team {
@@ -40,8 +45,8 @@
 		background-position: 0% 50%;
 	}
 }
-*/
 
+*/
 .chartjs-sample {
     background-color: #07859e;
 }
@@ -160,7 +165,7 @@ h1 {
 
 
 /* ----------------- Animations ----------------- */
-/* 1. Register the custom properties so CSS knows how to animate them */
+
 @property --color-1 {
     syntax: '<color>';
     inherits: false;
@@ -173,27 +178,27 @@ h1 {
     initial-value: #b478d4;
 }
 
-/* 2. Apply the gradient using those variables */
+
 #test {
     height: 103%;
     background: radial-gradient(circle at center, var(--color-1), var(--color-2));
     animation: shiftColors 6s ease-in-out infinite alternate;
 }
 
-/* 3. Animate the variables directly */
+
 @keyframes shiftColors {
     0% {
+        --color-1: rgb(147, 55, 239);
         --color-2: #b581c9;
-        --color-1: rgb(164, 84, 244);
     }
 
     50% {
-        --color-1: #a035df;
+        --color-1: #df31e8;
         --color-2: #b581c9;
     }
 
     100% {
-        --color-1: #9055f0;
+        --color-1: #7a4ff2;
         --color-2: #b581c9;
     }
 }
