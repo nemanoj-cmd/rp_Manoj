@@ -21,21 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
-<div class="d-flex flex-column justify-content-center w-100 h-100">
-
-	<div class="d-flex flex-column justify-content-center align-items-center">
-		<h1 class="fw-light text-white m-0">Animated Gradient Background</h1>
-		<div class="btn-group my-5">
-			<a href="https://codepen.io/P1N2O/details/pyBNzX" target="_blank" class="btn btn-outline-light" aria-current="page"><i class="fas fa-circle-info me-2"></i> PEN DETAILS</a>
-			<a href="https://codepen.io/P1N2O/full/pyBNzX" target="_blank" class="btn btn-outline-light">FULL SCREEN <i class="fas fa-expand ms-2"></i></a>
-		</div>
-		<a href="https://github.com/p1n2o" class="text-decoration-none">
-			<h5 class="fw-light text-white m-0">— P1N2O —</h5>
-		</a>
-	</div>
-</div>
-</div>
-
 <body class="body">
     <div class="container-lg min-vh-100">
         <header>
@@ -80,12 +65,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 p-0 d-flex align-items-center">
-                        <img style="border: 5px dashed #e3e7d4" src="img/planarians.webp" alt="Planarians" class="img-fluid">
+                        <img src="img/planarians.webp" alt="Planarians" class="img-fluid">
                         <!--img-fluid won't expand image larger than the container and will scale appropriately if 
                         the browser gets narrower than the image's set width-->
                     </div>
                     <div class="col-sm-6 p-0 d-flex align-items-center">
-                        <div class="container">
+                        <div class="container" id="test">
                             <h1 class="display-4" style="color: #fdfff2; font-size: 70px;">Effect of UV Light Radiation on Planarian Regeneration</h1>
                             <!--display 4 will make it stand out-->
                             <h2 style="color: rgb(244, 221, 253);">Research Project</h2>
@@ -96,40 +81,41 @@
             </div>
         </section>
 
-        <section class="overview text-dark p-2 text-left"> <!--Overview-->
+        <section class="overview text-dark p-3 text-left"> <!--Overview-->
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 p-3">
-                        <img src="img/19418.jpeg" alt="Water Temperature Graph" class="img-fluid">
+                        <br>
+                        <img src="img/background.png" alt="Planaria Regeneration" class="img-fluid" style="border: 3px dashed #6d36a1">
                     </div>
-                    <div class="col-sm-8 p-3">
+                    <div class="col-sm-8 p-3 index" id="background">
                         <h1 class="overview-left-padding">Background</h1>
                         <!--overvew-left-padding - custom padding left side-->
-                        <p class="lead overview-font overview-left-padding">Planarians are well known for their regenerative properties, allowing them to regrow parts of their body when harmed. This is due to the presence of collagen and stem cells, which allow for rapid regeneration rates. This study looks at how long-term exposure to ultraviolet (UV) light can affect regenerative processes, regarding survival rates and movement. Over a three-week period, brown planarians were exposed to Ultraviolet A and Ultraviolet B light, serving as independent variables, over varying durations of time.</p>
+                        <p class="lead overview-font overview-left-padding"> Planarians are well known for their regenerative properties, allowing them to regrow parts of their body when harmed. This is due to the presence of collagen and stem cells, which allow for rapid regeneration rates. This study looks at how long-term exposure to ultraviolet (UV) light can affect regenerative processes, regarding survival rates and movement. Over a three-week period, brown planarians were exposed to Ultraviolet A and Ultraviolet B light, serving as independent variables, over varying durations of time.</p>
                     </div>
                 </div>
-
+                <br>
                 <div class="row">
-                    <div class="col-sm-8 p-3">
+                    <div class="col-sm-8 p-3 index" id="rationale">
                         <h1 class="">Rationale</h1>
                         <p class="lead overview-font overview-right-padding">
                             Similarly to humans, Planarians utilize collagen to regulate the creation of these cells and play a large part in the regeneration process. Because of these features, planarians are often used to model cell growth in other organisms, including humans. 
                         </p>
                     </div>
                     <div class="col-sm-4 p-3">
-                        <img src="img/Rationale.png" alt="Water Map" class="img-fluid" style="border: 2px dashed #14abab">
+                        <img src="img/Rationale.png" alt="Water Map" class="img-fluid" style="border: 3px dashed #6d36a1">
                     </div>
 
                 </div>
-
+                <br>
                 <div class="row">
                     <div class="col-sm-4 p-3">
-                        <img src="img/phytoplankton-pnas.jpg" alt="Phytoplankton" class="img-fluid">
+                        <img src="img/step2.png" alt="Phytoplankton" class="img-fluid" style="border: 3px dashed #6d36a1">
                     </div>
 
-                    <div class="col-sm-8 p-3">
+                    <div class="col-sm-8 p-3 index" id="procedure">
                         <h1 class="">Procedure</h1>
-                        <p class="lead overview-font overview-right-padding">To analyze the planarian’s regenerative ability after exposure, the time required for a planarian to reach the shaded side of a dish was recorded as the dependent variable. Certain treatment groups had a high mortality rate, supporting the hypothesis that UV light exposure is detrimental to regenerative abilities, while others had a minimal effect on surviving planarians. After experimentation, statistical analysis revealed a significant difference between various surviving groups. Those that underwent UVA exposure had slower times than those that underwent UVB lighting. The experimentation revealed lasting damage, and can be used to model UV exposure in humans.
+                        <p class="lead overview-font overview-right-padding">To analyze the planarian’s regenerative ability after exposure, the time required for a planarian to reach the shaded side of a dish was recorded as the dependent variable. Certain treatment groups had a high mortality rate, supporting the hypothesis that UV light exposure is detrimental to regenerative abilities, while others had a minimal effect on surviving planarians. Those that underwent UVA exposure had slower times than those that underwent UVB lighting. The experimentation revealed lasting damage, and can be used to model UV exposure in humans.
 </p>
                     </div>
                 </div>

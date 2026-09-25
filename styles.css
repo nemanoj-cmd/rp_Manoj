@@ -1,32 +1,32 @@
 /* ----------------- Class CSS ----------------- */
 
-.about{
-    width:400px;
+.about {
+    width: 400px;
     margin: auto;
-    background-color: #9ae4da;
+    background-color: #d39ae4;
     border: 1px solid #744e87;
 }
 
-.about-team{
-    color:#242018;
-    background-color: #14abab33;
+.about-team {
+    color: #31183e;
+    background-color: #9f14ab33;
 }
 
-.authors{
-    background-color: #f5ede7;
+.authors {
+    background-color: #f7e5e5;
 }
 
-.body{
+.body {
     background-color: #c6b8c6;
     font-family: 'DM Mono', monospace;
-    color:#242018;
+    color: #242018;
 }
 
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+/*
+.showcase  {
+	background: linear-gradient(-45deg, #ee52c4, #c53ce7, #5e23d5, #3a3ad4);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
 }
 
 @keyframes gradient {
@@ -40,80 +40,96 @@ body {
 		background-position: 0% 50%;
 	}
 }
+*/
 
-
-.chartjs-sample{
+.chartjs-sample {
     background-color: #07859e;
 }
 
+
 .dm-serif-display-regular {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .dm-mono-regular {
-  font-family: "DM Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.footer{                
+.footer {
     background-color: #82489b;
 }
 
 h1 {
     font-family: "DM Serif Display", serif;
     font-size: 50px;
-    color:#454037;
+    color: #31183e;
 }
 
-.icon-white{            /* Arrow icon at bottom of page */
+.icon-white {
+    /* Arrow icon at bottom of page */
     color: #FFFFFF;
 }
 
-.nav-background-color{   /* navbar background color */
-    background-color: #82489b;
+.index {
+    border: 5px solid #5e2b83;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-out;
 }
 
-.nav-menu-item{               /* navbar link text properties */
-    font-size:25px;
+.index:hover {
+    transition: ease-in 0.3s;
+    box-shadow: 5px 5px 0px #5e2b83;
+    border-radius: 10px;
+}
+
+.nav-background-color {
+    /* navbar background color */
+    background-color: #1f0545;
+}
+
+.nav-menu-item {
+    /* navbar link text properties */
+    font-size: 25px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.overview{
-    background-color: #eae6d2;
-    border: 2px solid #14abab;
+.overview {
+    background-color: #f7e5e5;
 }
 
-.overview-left-padding{
+.overview-left-padding {
     padding-left: 20px;
 }
 
-.overview-right-padding{  
+.overview-right-padding {
     padding-right: 20px;
 }
 
-.procedure{
-    background-color: #ece1ef;
+.procedure {
+    background-color: #f7e5e5;
     padding: 1px;
 }
 
-.showcase{
-    background-color: #b581c9; /*#0096c7*/
+.showcase {
+    background-color: #b581c9;
+    /*#0096c7*/
 }
 
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
-#chart-wrapper{
+#chart-wrapper {
     margin: auto;
-    padding: 10px; 
+    padding: 10px;
     min-height: 400px;
     background-color: whitesmoke !important;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 
@@ -122,8 +138,8 @@ h1 {
     display: inline-block;
     position: relative;
     /*color: #0087ca;*/
-  }
-  
+}
+
 .hover-underline-animation:after {
     content: '';
     position: absolute;
@@ -136,8 +152,48 @@ h1 {
     /*transform-origin: bottom right;*/
     transition: transform 0.35s ease-out;
 }
-  
+
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
+}
+
+
+/* ----------------- Animations ----------------- */
+/* 1. Register the custom properties so CSS knows how to animate them */
+@property --color-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #b581c9;
+}
+
+@property --color-2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #b478d4;
+}
+
+/* 2. Apply the gradient using those variables */
+#test {
+    height: 103%;
+    background: radial-gradient(circle at center, var(--color-1), var(--color-2));
+    animation: shiftColors 6s ease-in-out infinite alternate;
+}
+
+/* 3. Animate the variables directly */
+@keyframes shiftColors {
+    0% {
+        --color-2: #b581c9;
+        --color-1: rgb(164, 84, 244);
+    }
+
+    50% {
+        --color-1: #a035df;
+        --color-2: #b581c9;
+    }
+
+    100% {
+        --color-1: #9055f0;
+        --color-2: #b581c9;
+    }
 }
