@@ -27,7 +27,7 @@
     color: #242018;
 }
 
-/*
+
 .showcase  {
 	background: linear-gradient(-45deg, #ee52c4, #c53ce7, #5e23d5, #3a3ad4);
 	background-size: 400% 400%;
@@ -46,7 +46,6 @@
 	}
 }
 
-*/
 .chartjs-sample {
     background-color: #07859e;
 }
@@ -161,44 +160,4 @@ h1 {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
-}
-
-
-/* ----------------- Animations ----------------- */
-
-@property --color-1 {
-    syntax: '<color>';
-    inherits: false;
-    initial-value: #b581c9;
-}
-
-@property --color-2 {
-    syntax: '<color>';
-    inherits: false;
-    initial-value: #b478d4;
-}
-
-
-#test {
-    height: 103%;
-    background: radial-gradient(circle at center, var(--color-1), var(--color-2));
-    animation: shiftColors 6s ease-in-out infinite alternate;
-}
-
-
-@keyframes shiftColors {
-    0% {
-        --color-1: rgb(147, 55, 239);
-        --color-2: #b581c9;
-    }
-
-    50% {
-        --color-1: #df31e8;
-        --color-2: #b581c9;
-    }
-
-    100% {
-        --color-1: #7a4ff2;
-        --color-2: #b581c9;
-    }
 }
