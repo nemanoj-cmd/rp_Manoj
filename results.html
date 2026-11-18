@@ -21,6 +21,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Display:ital@0;1&display=swap"
         rel="stylesheet">
+    <script src="
+https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.min.js
+"></script>
+    <script src="linechart.js"></script>
 </head>
 
 <body class="body">
@@ -58,10 +62,19 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </nav>
         </header>
-        <p>Work In Progress...</p>
+        <section class="text-light p-2 text-center">
+            <h1>Results</h1>
+            <section class="chartJS-sample">
+                <div class="container d-flex overflow-hidden bg-light rounded-4" id="chart-wrap">
+                    <canvas id="lineChart"></canvas>
+
+                </div>
+
+            </section>
     </div>
+    </section>
 </body>
-           
